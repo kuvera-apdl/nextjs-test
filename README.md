@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Meridian Financial
 
-## Getting Started
+A **fictional** B2B financial-services platform — global payments, treasury management, business lending, and corporate cards — built as a fullstack Next.js demo application. Nothing here is a real financial product; all companies, people, numbers, and claims are invented.
 
-First, run the development server:
+The site is intentionally feature-dense: 20 unique pages, each with its own interactive elements, backed by real API routes and an in-memory data store. It is designed to be used as a standalone playground / integration target for testing tooling against a realistic multi-page web app.
+
+## Stack
+
+- [Next.js 16](https://nextjs.org) (App Router) + React 19 + TypeScript
+- Tailwind CSS v4
+- Hand-rolled SVG charts (no chart libraries)
+- In-memory server-side data store (`lib/store.ts`) — data reseeds on every server restart, mutations persist while the server runs
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Demo dashboard credentials
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Field    | Value                   |
+| -------- | ----------------------- |
+| Email    | `demo@meridian.example` |
+| Password | `northstar`             |
 
-## Learn More
+Sign in at `/login` to access the client dashboard (`/dashboard`).
 
-To learn more about Next.js, take a look at the following resources:
+## Pages (20)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Route                        | Highlights                                                              |
+| ---------------------------- | ----------------------------------------------------------------------- |
+| `/`                          | Animated stats, tabbed product showcase, logo marquee, testimonials     |
+| `/solutions/payments`        | Payment-cost savings calculator, rail comparison tabs                   |
+| `/solutions/treasury`        | Cash-flow projection simulator, allocation donut                        |
+| `/solutions/lending`         | Loan calculator with amortization, eligibility checker                  |
+| `/solutions/corporate-cards` | Live card customizer, spend-control sliders, rewards calculator         |
+| `/pricing`                   | Monthly/annual toggle, volume slider, comparison table                  |
+| `/about`                     | Interactive timeline, leadership bios in modals                         |
+| `/careers`                   | API-backed job board with filters, application modal                    |
+| `/contact`                   | Validated contact form (POST `/api/contact`)                            |
+| `/demo`                      | Multi-step demo request wizard (POST `/api/demo`)                       |
+| `/resources/blog`            | Searchable, tag-filtered blog (API-backed)                              |
+| `/resources/blog/[slug]`     | Reading progress bar, like button, table of contents                    |
+| `/resources/faq`             | Searchable FAQ accordion with categories                                |
+| `/tools/fx-converter`        | Live FX converter backed by `/api/fx`                                   |
+| `/developers`                | API reference with language tabs, copy buttons, live "try it" panel     |
+| `/status`                    | Auto-polling system status, 90-day uptime bars, incident history        |
+| `/login`                     | Cookie-based mock auth                                                  |
+| `/dashboard`                 | KPIs, cash-flow chart, sortable/filterable transactions, CSV export     |
+| `/dashboard/invoices`        | Full invoice CRUD (create, mark paid, void, delete)                     |
+| `/dashboard/payments`        | Payment initiation; payments auto-settle server-side after ~25 seconds  |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## API routes
 
-## Deploy on Vercel
+`/api/auth/login` · `/api/auth/logout` · `/api/auth/me` · `/api/contact` · `/api/demo` · `/api/newsletter` · `/api/jobs` · `/api/posts` · `/api/posts/[slug]` · `/api/posts/[slug]/like` · `/api/fx` · `/api/status` · `/api/v1/ping` · `/api/metrics` · `/api/transactions` · `/api/invoices` · `/api/invoices/[id]` · `/api/payments` · `/api/payments/[id]` · `/api/beneficiaries`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+All routes are dynamic (no caching) and operate on the shared in-memory store.
