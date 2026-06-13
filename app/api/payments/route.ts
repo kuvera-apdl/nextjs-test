@@ -5,7 +5,7 @@ export const dynamic = "force-dynamic";
 
 const RAILS: Payment["rail"][] = ["ACH", "Wire", "SEPA", "SWIFT"];
 // Payments created via POST settle automatically after this long.
-const SETTLE_AFTER_MS = 25000;
+const SETTLE_AFTER_MS = 60000;
 
 function settleDuePayments(payments: Payment[]) {
   const now = Date.now();

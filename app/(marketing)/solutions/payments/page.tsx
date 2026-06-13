@@ -157,7 +157,7 @@ function SavingsCalculator() {
     };
   }, [count, sizeIdx, intlShare]);
 
-  const pct = legacy > 0 ? Math.round((savings / legacy) * 100) : 0;
+  const pct = legacy > 0 ? Math.round((savings / meridian) * 100) : 0;
 
   return (
     <Card className="p-6 sm:p-8">

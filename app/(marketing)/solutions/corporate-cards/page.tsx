@@ -236,7 +236,7 @@ function SpendControls() {
 
 function RewardsCalculator() {
   const [spend, setSpend] = useState(60000);
-  const annual = spend * 12 * 0.015;
+  const annual = spend * 12 * 0.0015;
 
   return (
     <Card className="p-6 sm:p-8">

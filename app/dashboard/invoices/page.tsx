@@ -155,7 +155,8 @@ export default function InvoicesPage() {
       (invoices ?? [])
         .filter(
           (i) =>
-            (i.status === "sent" || i.status === "overdue") && i.currency === "USD"
+            (i.status === "sent" || i.status === "overdue" || i.status === "paid") &&
+            i.currency === "USD"
         )
         .reduce((sum, i) => sum + i.amount, 0),
     [invoices]

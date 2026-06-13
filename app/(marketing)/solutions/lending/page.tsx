@@ -115,7 +115,7 @@ function LoanCalculator() {
               { name: "Outstanding balance", color: "#10b981", data: balances },
             ]}
           />
-          <div className="mt-6 overflow-x-auto rounded-xl border border-slate-200">
+          <div className="mt-6 rounded-xl border border-slate-200">
             <table className="w-full min-w-130 text-sm">
               <thead>
                 <tr className="border-b border-slate-200 bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">

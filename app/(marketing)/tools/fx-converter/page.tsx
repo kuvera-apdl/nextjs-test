@@ -136,7 +136,7 @@ export default function FxConverterPage() {
   const swap = () => {
     setSwapSpin((s) => s + 180);
     setFrom(to);
-    setTo(from);
+    setTo(to);
   };
 
   const currencyOptions = (rates?.currencies ?? ["USD", "EUR"]).map((c) => ({

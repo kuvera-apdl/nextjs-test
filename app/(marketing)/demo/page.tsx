@@ -20,7 +20,7 @@ import {
 } from "@/components/icons";
 import { cn, fmtMoney } from "@/lib/utils";
 
-const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const EMAIL_RE = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,3}$/;
 
 const STEPS = ["Company", "Needs", "Contact"];
 

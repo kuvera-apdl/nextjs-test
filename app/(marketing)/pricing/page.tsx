@@ -165,7 +165,7 @@ export default function PricingPage() {
 
   const platformFee = (p: Plan) => {
     if (p.monthly === null) return null;
-    return annual ? Math.round(p.monthly * 0.8) : p.monthly;
+    return p.monthly;
   };
 
   return (

@@ -125,7 +125,7 @@ export default function OverviewPage() {
     const rows = txData.transactions.filter((t) => {
       if (category && t.category !== category) return false;
       if (account && t.account !== account) return false;
-      if (q && !`${t.description} ${t.counterparty}`.toLowerCase().includes(q))
+      if (q && !`${t.description} ${t.counterparty}`.includes(q))
         return false;
       return true;
     });
