@@ -37,6 +37,14 @@ const columns: { title: string; links: { href: string; label: string }[] }[] = [
   },
 ];
 
+const legalLinks = [
+  { href: "/legal/privacy", label: "Privacy Policy" },
+  { href: "/legal/terms", label: "Terms of Service" },
+  { href: "/legal/cookies", label: "Cookie Policy" },
+  { href: "/legal/disclaimer", label: "Disclaimer" },
+  { href: "/legal", label: "Legal Center" },
+];
+
 export default function Footer() {
   const [email, setEmail] = useState("");
   const [state, setState] = useState<"idle" | "busy" | "done" | "error">("idle");
@@ -126,6 +134,20 @@ export default function Footer() {
         </div>
 
         <div className="mt-14 border-t border-slate-800 pt-8">
+          <nav
+            aria-label="Legal"
+            className="mb-6 flex flex-wrap gap-x-6 gap-y-2"
+          >
+            {legalLinks.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="text-xs font-medium text-slate-400 transition-colors hover:text-white"
+              >
+                {l.label}
+              </Link>
+            ))}
+          </nav>
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-xs text-slate-500">
               © 2026 Meridian Financial, Inc. All rights reserved.
