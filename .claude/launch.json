@@ -6,6 +6,12 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["start", "--prefix", "/Users/kirillsukhikh/meridian-financial"],
       "port": 4173
+    },
+    {
+      "name": "dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "/Users/kirillsukhikh/meridian-financial", "--", "--port", "4173"],
+      "port": 4173
     }
   ]
 }
