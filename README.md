@@ -59,3 +59,5 @@ Sign in at `/login` to access the client dashboard (`/dashboard`).
 `/api/auth/login` · `/api/auth/logout` · `/api/auth/me` · `/api/contact` · `/api/demo` · `/api/newsletter` · `/api/jobs` · `/api/posts` · `/api/posts/[slug]` · `/api/posts/[slug]/like` · `/api/fx` · `/api/status` · `/api/v1/ping` · `/api/metrics` · `/api/transactions` · `/api/invoices` · `/api/invoices/[id]` · `/api/payments` · `/api/payments/[id]` · `/api/beneficiaries`
 
 All routes are dynamic (no caching) and operate on the shared in-memory store.
+
+hello from APDL codegen.
