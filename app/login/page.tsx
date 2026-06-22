@@ -7,7 +7,7 @@ import { Button, Card, Input, Spinner, Toggle } from "@/components/ui";
 import { IconAlert, IconArrowRight } from "@/components/icons";
 import { Logo } from "@/components/nav";
 
-const DEMO_EMAIL = "demo@meridian.example";
+const DEMO_EMAIL = "demo@keelstone.example";
 const DEMO_PASSWORD = "northstar";
 
 const panelMetrics = [
@@ -27,7 +27,7 @@ export default function LoginPage() {
   const [shake, setShake] = useState(false);
 
   useEffect(() => {
-    document.title = "Sign in — Meridian Financial";
+    document.title = "Sign in — Keelstone Financial";
   }, []);
 
   function fillDemo() {
@@ -76,7 +76,7 @@ export default function LoginPage() {
         >
           <Logo />
           <h1 className="mt-8 text-2xl font-semibold tracking-tight text-slate-900">
-            Sign in to Meridian
+            Sign in to Keelstone
           </h1>
           <p className="mt-2 text-sm text-slate-600">
             Welcome back. Enter your credentials to access your workspace.
@@ -184,7 +184,7 @@ export default function LoginPage() {
 
         <div className="relative max-w-md">
           <p className="text-sm font-semibold uppercase tracking-wider text-emerald-400">
-            Meridian Financial
+            Keelstone Financial
           </p>
           <h2 className="mt-4 text-3xl font-semibold tracking-tight">
             The financial backbone for ambitious operators.
@@ -209,7 +209,7 @@ export default function LoginPage() {
           <div className="mt-12 w-80 -rotate-2 rounded-2xl border border-white/10 bg-gradient-to-br from-slate-800 to-slate-900 p-5 shadow-2xl">
             <div className="flex items-center justify-between">
               <span className="text-sm font-semibold tracking-tight">
-                Meridian Treasury
+                Keelstone Treasury
               </span>
               <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-emerald-600">
                 <span className="block h-3 w-3 rounded-full border-2 border-white" />

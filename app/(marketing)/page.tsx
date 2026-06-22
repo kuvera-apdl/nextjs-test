@@ -122,7 +122,7 @@ const productContent: Record<
   },
   treasury: {
     title: "Every balance, one live view",
-    copy: "Connect your banks and entities once and Meridian keeps a real-time, consolidated picture of group cash — then puts idle balances to work automatically.",
+    copy: "Connect your banks and entities once and Keelstone keeps a real-time, consolidated picture of group cash — then puts idle balances to work automatically.",
     bullets: [
       "Live cash position across accounts, entities, and currencies",
       "13-week forecasts built from your actual inflows and outflows",
@@ -134,7 +134,7 @@ const productContent: Record<
   },
   lending: {
     title: "Credit that reads your cash flow",
-    copy: "Revolving credit lines underwritten on the payment volume Meridian already sees — so approval takes days, not quarters, and your rate improves as you grow.",
+    copy: "Revolving credit lines underwritten on the payment volume Keelstone already sees — so approval takes days, not quarters, and your rate improves as you grow.",
     bullets: [
       "Lines from $250K to $20M, underwritten on real flows",
       "Draw down and repay in two clicks, with funds landing instantly",
@@ -161,7 +161,7 @@ const productContent: Record<
 const testimonials = [
   {
     quote:
-      "We replaced four banking portals and a wall of spreadsheets with Meridian. Month-end close went from nine days to four, and our auditors stopped sending us follow-up lists.",
+      "We replaced four banking portals and a wall of spreadsheets with Keelstone. Month-end close went from nine days to four, and our auditors stopped sending us follow-up lists.",
     name: "Ingrid Solberg",
     role: "VP Finance, Nordwind Logistics",
     initials: "IS",
@@ -323,7 +323,7 @@ function CardsVisual() {
       <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-800 via-slate-900 to-emerald-950 p-6 text-white shadow-xl ring-1 ring-white/10">
         <div className="absolute -right-10 -top-16 h-44 w-44 rounded-full bg-emerald-500/20 blur-2xl" />
         <div className="relative flex items-center justify-between">
-          <span className="text-sm font-semibold tracking-tight">Meridian</span>
+          <span className="text-sm font-semibold tracking-tight">Keelstone</span>
           <span className="rounded-full border border-white/20 px-2.5 py-0.5 text-[10px] font-medium uppercase tracking-widest text-slate-300">
             Virtual
           </span>
@@ -365,7 +365,7 @@ export default function HomePage() {
   const [tPaused, setTPaused] = useState(false);
 
   useEffect(() => {
-    document.title = "Meridian Financial — Financial operations for modern business";
+    document.title = "Keelstone Financial — Financial operations for modern business";
   }, []);
 
   useEffect(() => {
@@ -398,7 +398,7 @@ export default function HomePage() {
                 <span className="text-emerald-400">One platform, one balance.</span>
               </h1>
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-300">
-                Meridian gives finance teams a single, programmable home for global payments,
+                Keelstone gives finance teams a single, programmable home for global payments,
                 multi-currency treasury, credit, and corporate cards — with the controls your
                 auditors will actually like.
               </p>

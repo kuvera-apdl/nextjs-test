@@ -33,7 +33,7 @@ const TOPICS = [
 const OFFICES = [
   {
     city: "New York HQ",
-    lines: ["1 Meridian Plaza, Floor 22", "New York, NY 10004, United States"],
+    lines: ["1 Keelstone Plaza, Floor 22", "New York, NY 10004, United States"],
   },
   {
     city: "London",
@@ -54,7 +54,7 @@ type FieldErrors = {
 
 export default function ContactPage() {
   useEffect(() => {
-    document.title = "Contact — Meridian Financial";
+    document.title = "Contact — Keelstone Financial";
   }, []);
 
   const [name, setName] = useState("");

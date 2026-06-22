@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Meridian Financial — Financial operations for modern business",
+  title: "Keelstone Financial — Financial operations for modern business",
   description:
-    "Meridian Financial is a fictional B2B financial services platform: global payments, treasury management, business lending, and corporate cards. Demo application.",
+    "Keelstone Financial is a fictional B2B financial services platform: global payments, treasury management, business lending, and corporate cards. Demo application.",
 };
 
 export default function RootLayout({

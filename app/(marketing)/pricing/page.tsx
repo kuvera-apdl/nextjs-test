@@ -160,7 +160,7 @@ export default function PricingPage() {
   });
 
   useEffect(() => {
-    document.title = "Pricing — Meridian Financial";
+    document.title = "Pricing — Keelstone Financial";
   }, []);
 
   const platformFee = (p: Plan) => {
@@ -402,9 +402,9 @@ export default function PricingPage() {
           />
           <div className="mx-auto mt-10 max-w-3xl">
             <AccordionItem title="What counts as monthly payment volume?" defaultOpen>
-              Volume is the total value of outbound payments you send through Meridian in a
+              Volume is the total value of outbound payments you send through Keelstone in a
               calendar month — wires, local rails, and FX conversions each count once. Incoming
-              funds and transfers between your own Meridian balances are free and never count
+              funds and transfers between your own Keelstone balances are free and never count
               toward volume.
             </AccordionItem>
             <AccordionItem title="How does the annual discount work?">

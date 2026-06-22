@@ -146,17 +146,17 @@ function seedTransactions(): Transaction[] {
     ["Cloud infrastructure", "Northstack Cloud", "Infrastructure", "Operating (USD)", "USD", 4200, 9800, -1],
     ["Invoice settlement", "Nordwind Logistics", "Revenue", "EUR Operations", "EUR", 6000, 31000, 1],
     ["Freight services", "Atlas Freight", "Logistics", "Operating (USD)", "USD", 2800, 11500, -1],
-    ["Card settlements payout", "Meridian Acquiring", "Revenue", "Operating (USD)", "USD", 5200, 17400, 1],
+    ["Card settlements payout", "Keelstone Acquiring", "Revenue", "Operating (USD)", "USD", 5200, 17400, 1],
     ["Office lease", "Foundry Workspaces", "Office", "Operating (USD)", "USD", 14200, 14200, -1],
     ["CRM subscription", "Relay CRM", "Software", "Operating (USD)", "USD", 1240, 1240, -1],
     ["Invoice settlement", "Lumen Health", "Revenue", "Operating (USD)", "USD", 7600, 36000, 1],
     ["Liability insurance", "Argonaut Insurance", "Insurance", "Operating (USD)", "USD", 3150, 3150, -1],
     ["Treasury yield", "Treasury Reserve", "Treasury", "Treasury Reserve", "USD", 5900, 8400, 1],
-    ["FX conversion EUR→USD", "Meridian FX", "FX", "EUR Operations", "EUR", 12000, 45000, -1],
+    ["FX conversion EUR→USD", "Keelstone FX", "FX", "EUR Operations", "EUR", 12000, 45000, -1],
     ["Design retainer", "Bright Harbor Studio", "Services", "Operating (USD)", "USD", 6500, 6500, -1],
     ["Quarterly tax payment", "Federal tax payment", "Tax", "Operating (USD)", "USD", 21000, 38000, -1],
     ["Invoice settlement", "Verdant Foods", "Revenue", "EUR Operations", "EUR", 4400, 22000, 1],
-    ["Wire fees", "Meridian Fees", "Fees", "Operating (USD)", "USD", 45, 220, -1],
+    ["Wire fees", "Keelstone Fees", "Fees", "Operating (USD)", "USD", 45, 220, -1],
   ];
 
   const out: Transaction[] = [];
@@ -283,19 +283,19 @@ function seedJobs(): Job[] {
       "Own the orchestration layer that routes payments across ACH, SEPA, Faster Payments, and SWIFT. You will design idempotent payment state machines, improve settlement-time prediction, and keep our double-entry ledger honest at scale.",
       ["6+ years building distributed backend systems", "Production experience with payment rails or banking integrations", "Strong opinions about idempotency, retries, and exactly-once illusions", "Go or Kotlin in production"]),
     mk(2, "Staff Frontend Engineer", "Engineering", "Remote (US)", "Full-time", 9, "$200K – $245K",
-      "Lead the architecture of the Meridian dashboard — a data-dense financial workspace used daily by thousands of finance teams. You will set patterns for performance, accessibility, and real-time data across the product.",
+      "Lead the architecture of the Keelstone dashboard — a data-dense financial workspace used daily by thousands of finance teams. You will set patterns for performance, accessibility, and real-time data across the product.",
       ["8+ years of frontend engineering, deep React expertise", "Experience with data-heavy enterprise UIs", "Track record of mentoring and design-system stewardship", "Care about p95 interaction latency"]),
     mk(3, "Product Designer, Treasury", "Design", "London", "Full-time", 12, "£95K – £120K",
       "Design the tools CFOs use to see around corners: cash forecasting, liquidity planning, and yield management. You will run discovery with finance leaders and ship polished, dense, trustworthy interfaces.",
       ["5+ years designing complex B2B products", "Portfolio showing data visualization craft", "Comfort working directly with customers", "Figma fluency; prototyping with real data a plus"]),
     mk(4, "Risk Analyst, Credit", "Risk & Compliance", "New York", "Full-time", 6, "$120K – $150K",
-      "Build and monitor the credit models behind Meridian Lending. You will analyze repayment performance, tune underwriting thresholds, and work with engineering to automate decisioning safely.",
+      "Build and monitor the credit models behind Keelstone Lending. You will analyze repayment performance, tune underwriting thresholds, and work with engineering to automate decisioning safely.",
       ["3+ years in credit risk, fintech lending preferred", "Strong SQL and Python", "Experience presenting risk posture to leadership", "Familiarity with SMB financial statements"]),
     mk(5, "Compliance Manager, EMEA", "Risk & Compliance", "London", "Full-time", 18, "£85K – £105K",
       "Own day-to-day compliance operations for our EMEA entities: transaction monitoring escalations, periodic reviews, and regulator-ready reporting. Partner with product to keep controls proportionate.",
       ["5+ years in financial-services compliance", "Working knowledge of EU AML directives and PSD2", "Experience with EMI or payment-institution licensing", "Calm under audit"]),
     mk(6, "Enterprise Account Executive", "Sales", "New York", "Full-time", 3, "$140K base + commission",
-      "Bring Meridian to companies moving $50M+ a year. You will run full-cycle sales with CFOs and VPs of Finance, supported by solutions engineering and a product that demos itself.",
+      "Bring Keelstone to companies moving $50M+ a year. You will run full-cycle sales with CFOs and VPs of Finance, supported by solutions engineering and a product that demos itself.",
       ["5+ years selling B2B SaaS or financial products to finance buyers", "History of $1M+ quotas, consistently exceeded", "Comfort with multi-stakeholder, security-reviewed deals", "Crisp written communication"]),
     mk(7, "Solutions Engineer", "Sales", "Remote (EU)", "Full-time", 15, "€90K – €115K",
       "Be the technical counterpart in enterprise deals: scope integrations, build proof-of-concepts against our API, and turn messy ERP exports into clean implementation plans.",
@@ -349,7 +349,7 @@ function seedPosts(): Post[] {
       slug: "halcyon-robotics-cut-payment-costs",
       title: "How Halcyon Robotics cut payment costs by 34%",
       excerpt:
-        "A robotics scale-up was paying suppliers in nine currencies through three banks. Here's how consolidating on Meridian changed their unit economics.",
+        "A robotics scale-up was paying suppliers in nine currencies through three banks. Here's how consolidating on Keelstone changed their unit economics.",
       tag: "Customers",
       author: "Priya Raghavan",
       authorRole: "Head of Treasury Solutions",
@@ -367,7 +367,7 @@ function seedPosts(): Post[] {
         ),
         p("None of this was anyone's fault. It's the default state of a company that grew fast and added banking relationships as it went."),
         h2("What changed"),
-        p("Halcyon moved supplier payments onto Meridian rails-based routing. Payments to Germany go out as SEPA transfers for under a euro. Japanese suppliers are paid from a yen balance funded at mid-market rates in scheduled batches. The system picks the rail; the policy engine enforces approvals."),
+        p("Halcyon moved supplier payments onto Keelstone rails-based routing. Payments to Germany go out as SEPA transfers for under a euro. Japanese suppliers are paid from a yen balance funded at mid-market rates in scheduled batches. The system picks the rail; the policy engine enforces approvals."),
         quote("The surprise wasn't the fee savings — it was getting our Tuesdays back. — Director of Finance, Halcyon Robotics"),
         p("Across the first two quarters, total payment costs fell 34%: roughly half from rail selection, half from FX margin compression. Treasury workload dropped by about eight hours a week — capacity the team reinvested in actually forecasting."),
       ],
@@ -413,7 +413,7 @@ function seedPosts(): Post[] {
       readMinutes: 9,
       likes: 112,
       content: [
-        p("Every balance Meridian shows is derived from an append-only, double-entry ledger. Nothing updates in place; money never moves without an equal and opposite entry. This year the ledger crossed one billion entries, which feels like a reasonable moment to write down what held up and what we rebuilt."),
+        p("Every balance Keelstone shows is derived from an append-only, double-entry ledger. Nothing updates in place; money never moves without an equal and opposite entry. This year the ledger crossed one billion entries, which feels like a reasonable moment to write down what held up and what we rebuilt."),
         h2("What held up"),
         ul(
           "Append-only writes: immutability turned a class of bugs into impossibilities",
@@ -453,7 +453,7 @@ function seedPosts(): Post[] {
           "Match certifications to the data you'll actually share",
           "Treat exceptions as conversation starters, not disqualifiers"
         ),
-        p("Certifications are floors, not ceilings. They tell you a platform takes the baseline seriously — the differentiation is in everything built above it. (Reminder: Meridian is a fictional demo, and so are these attestations.)"),
+        p("Certifications are floors, not ceilings. They tell you a platform takes the baseline seriously — the differentiation is in everything built above it. (Reminder: Keelstone is a fictional demo, and so are these attestations.)"),
       ],
     },
     {
@@ -478,7 +478,7 @@ function seedPosts(): Post[] {
           "Rate alerts for opportunistic conversion when timing is flexible",
           "Never let conversion happen as a side effect of a payment"
         ),
-        p("That last rule is the one banks quietly violate: a dollar payment from a euro balance triggers a conversion at whatever margin applies. On Meridian, cross-currency payments quote the conversion explicitly before you approve — the margin is on the screen, not in the spread."),
+        p("That last rule is the one banks quietly violate: a dollar payment from a euro balance triggers a conversion at whatever margin applies. On Keelstone, cross-currency payments quote the conversion explicitly before you approve — the margin is on the screen, not in the spread."),
         p("The result is boring in the best way: FX stops being a recurring surprise in the P&L and becomes a line item you decided on purpose."),
       ],
     },
@@ -494,7 +494,7 @@ function seedPosts(): Post[] {
       readMinutes: 7,
       likes: 84,
       content: [
-        p("When you send a payment on Meridian, you don't pick ACH or wire or SEPA — you state an amount, a beneficiary, and optionally a deadline. The orchestration layer picks the rail. This post is about why that layer exists and what it took to make it trustworthy."),
+        p("When you send a payment on Keelstone, you don't pick ACH or wire or SEPA — you state an amount, a beneficiary, and optionally a deadline. The orchestration layer picks the rail. This post is about why that layer exists and what it took to make it trustworthy."),
         h2("The problem with picking rails by hand"),
         p("Humans pick rails by habit. The habit is usually 'wire', because wires feel safe — and cost twenty times more than the ACH transfer that would have arrived in time. Multiply by a thousand payments a month and habit becomes a budget line."),
         h2("What the router considers"),
@@ -658,7 +658,7 @@ function seedStore(): Store {
     balanceHistory: seedBalanceHistory(),
     users: [
       {
-        email: "demo@meridian.example",
+        email: "demo@keelstone.example",
         password: "northstar",
         name: "Dana Okafor",
         org: "Halcyon Robotics Ltd",
@@ -674,12 +674,12 @@ function seedStore(): Store {
 
 declare global {
   // eslint-disable-next-line no-var
-  var __meridianStore: Store | undefined;
+  var __keelstoneStore: Store | undefined;
 }
 
 export function getStore(): Store {
-  if (!globalThis.__meridianStore) {
-    globalThis.__meridianStore = seedStore();
+  if (!globalThis.__keelstoneStore) {
+    globalThis.__keelstoneStore = seedStore();
   }
-  return globalThis.__meridianStore;
+  return globalThis.__keelstoneStore;
 }

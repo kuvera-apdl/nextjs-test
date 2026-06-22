@@ -102,7 +102,7 @@ export default function PaymentsPage() {
   const [sending, setSending] = useState(false);
 
   useEffect(() => {
-    document.title = "Payments — Meridian Financial";
+    document.title = "Payments — Keelstone Financial";
   }, []);
 
   useEffect(() => {

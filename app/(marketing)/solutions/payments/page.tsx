@@ -144,20 +144,20 @@ function SavingsCalculator() {
   const [sizeIdx, setSizeIdx] = useState(4); // $2,500
   const [intlShare, setIntlShare] = useState(35);
 
-  const { legacy, meridian, savings } = useMemo(() => {
+  const { legacy, keelstone, savings } = useMemo(() => {
     const size = SIZE_STEPS[sizeIdx];
     const intl = Math.round((count * intlShare) / 100);
     const domestic = count - intl;
     const legacyCost = intl * (25 + size * 0.014) + domestic * 2;
-    const meridianCost = intl * (5 + size * 0.0035) + domestic * 0.4;
+    const keelstoneCost = intl * (5 + size * 0.0035) + domestic * 0.4;
     return {
       legacy: legacyCost,
-      meridian: meridianCost,
-      savings: legacyCost - meridianCost,
+      keelstone: keelstoneCost,
+      savings: legacyCost - keelstoneCost,
     };
   }, [count, sizeIdx, intlShare]);
 
-  const pct = legacy > 0 ? Math.round((savings / meridian) * 100) : 0;
+  const pct = legacy > 0 ? Math.round((savings / keelstone) * 100) : 0;
 
   return (
     <Card className="p-6 sm:p-8">
@@ -192,7 +192,7 @@ function SavingsCalculator() {
           />
           <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 text-xs leading-relaxed text-slate-500">
             Legacy bank modeled at $25 per international wire, $2 per domestic
-            payment, and a 1.4% FX margin. Meridian modeled at $5 international,
+            payment, and a 1.4% FX margin. Keelstone modeled at $5 international,
             $0.40 domestic, and 0.35% FX. Estimates only — your actual pricing
             may be lower at volume.
           </div>
@@ -206,8 +206,8 @@ function SavingsCalculator() {
               sub="fees + FX margin"
             />
             <Stat
-              label="Meridian / month"
-              value={fmtMoney(meridian, "USD", { compact: true })}
+              label="Keelstone / month"
+              value={fmtMoney(keelstone, "USD", { compact: true })}
               sub="transparent pricing"
               trend="up"
             />
@@ -233,7 +233,7 @@ function SavingsCalculator() {
               valueFormat={(v) => fmtMoney(v, "USD", { compact: true })}
               data={[
                 { label: "Legacy bank", value: Math.round(legacy), color: "#64748b" },
-                { label: "Meridian", value: Math.round(meridian), color: "#10b981" },
+                { label: "Keelstone", value: Math.round(keelstone), color: "#10b981" },
               ]}
             />
           </div>
@@ -257,7 +257,7 @@ const RAILS: Record<
   ach: {
     title: "ACH",
     blurb:
-      "The workhorse of US domestic payments. Meridian batches, schedules, and retries ACH credits and debits automatically, with same-day windows when you need them.",
+      "The workhorse of US domestic payments. Keelstone batches, schedules, and retries ACH credits and debits automatically, with same-day windows when you need them.",
     rows: [
       ["Cost", "$0.40 per credit, flat"],
       ["Speed", "Same-day windows at 8:00, 11:00, and 14:00 ET"],
@@ -324,7 +324,7 @@ function RailsSection() {
       <div className="grid gap-8 lg:grid-cols-2">
         <div>
           <h3 className="text-xl font-semibold tracking-tight text-slate-900">
-            {active.title} on Meridian
+            {active.title} on Keelstone
           </h3>
           <p className="mt-3 leading-relaxed text-slate-600">{active.blurb}</p>
           <ul className="mt-5 space-y-2.5">
@@ -384,7 +384,7 @@ function Feature({
 
 export default function PaymentsPage() {
   useEffect(() => {
-    document.title = "Global Payments — Meridian Financial";
+    document.title = "Global Payments — Keelstone Financial";
   }, []);
 
   return (
@@ -443,7 +443,7 @@ export default function PaymentsPage() {
           <SectionHeading
             eyebrow="Savings calculator"
             title="See what your bank is really charging you"
-            description="Drag the sliders to match your payment volume. We’ll estimate your monthly cost on a legacy bank versus Meridian — fees and FX margin included."
+            description="Drag the sliders to match your payment volume. We’ll estimate your monthly cost on a legacy bank versus Keelstone — fees and FX margin included."
           />
           <div className="mt-10">
             <SavingsCalculator />
@@ -457,7 +457,7 @@ export default function PaymentsPage() {
           <SectionHeading
             eyebrow="Every rail, one API"
             title="The right rail for every payment"
-            description="Meridian routes each payment over the fastest, cheapest rail that meets your delivery deadline — or you can pin a rail explicitly."
+            description="Keelstone routes each payment over the fastest, cheapest rail that meets your delivery deadline — or you can pin a rail explicitly."
           />
           <div className="mt-10">
             <RailsSection />
@@ -502,7 +502,7 @@ export default function PaymentsPage() {
             <Feature
               icon={<IconRefresh className="h-5 w-5" />}
               title="Auto-reconciliation"
-              desc="Payments sync to your ledger with references intact. Meridian matches confirmations to invoices and flags the rare exception for review."
+              desc="Payments sync to your ledger with references intact. Keelstone matches confirmations to invoices and flags the rare exception for review."
             />
           </div>
         </div>
@@ -520,7 +520,7 @@ export default function PaymentsPage() {
               </h2>
               <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-300">
                 Onboard this week, connect your ERP, and route your next vendor
-                run through Meridian. Pricing that scales down as your volume
+                run through Keelstone. Pricing that scales down as your volume
                 scales up.
               </p>
               <div className="mt-8 flex flex-wrap justify-center gap-3">

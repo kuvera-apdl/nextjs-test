@@ -60,7 +60,7 @@ const handling = [
 
 export default function LegalIndexPage() {
   useEffect(() => {
-    document.title = "Legal Center — Meridian Financial";
+    document.title = "Legal Center — Keelstone Financial";
   }, []);
 
   return (
@@ -76,7 +76,7 @@ export default function LegalIndexPage() {
             Legal Center
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-slate-300">
-            The policies and notices for the Meridian Financial demo. Everything
+            The policies and notices for the Keelstone Financial demo. Everything
             here is sample text for a fictional company — published mainly to make
             it unmistakable that this is a safe, synthetic environment.
           </p>

@@ -10,10 +10,10 @@ const sections: LegalSection[] = [
     body: (
       <>
         <p>
-          Meridian Financial is a <strong>fictional company</strong>. This
+          Keelstone Financial is a <strong>fictional company</strong>. This
           website and dashboard are a <strong>demonstration application</strong>{" "}
           created to showcase product interfaces and to serve as a sandbox for
-          development and testing. There is no real Meridian Financial entity,
+          development and testing. There is no real Keelstone Financial entity,
           and no relationship is created by using this site.
         </p>
       </>
@@ -132,7 +132,7 @@ export default function DisclaimerPage() {
       title="Disclaimer"
       intro="The single most important page here: everything on this site is fictional, simulated, and safe to test against."
       keyPoints={[
-        "Meridian Financial is fictional; the site is a demonstration.",
+        "Keelstone Financial is fictional; the site is a demonstration.",
         "No real accounts, money movement, advice, or attestations.",
         "All names, figures, and transactions are fabricated for illustration.",
         "Built to be safely scripted and integrated against as a test fixture.",

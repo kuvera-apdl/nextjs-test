@@ -10,13 +10,13 @@ const sections: LegalSection[] = [
     body: (
       <>
         <p>
-          These Terms of Service (“Terms”) govern your use of the Meridian
+          These Terms of Service (“Terms”) govern your use of the Keelstone
           Financial demonstration website and dashboard (the “Service”). By
           accessing or using the Service, you agree to these Terms. If you do not
           agree, do not use the Service.
         </p>
         <p>
-          Meridian Financial is a fictional company; these Terms are sample text
+          Keelstone Financial is a fictional company; these Terms are sample text
           and form part of a demonstration, not a binding commercial agreement.
         </p>
       </>
@@ -110,7 +110,7 @@ const sections: LegalSection[] = [
       <>
         <p>
           The Service, including its design, text, and code, is provided for
-          demonstration purposes. The “Meridian Financial” name and branding are
+          demonstration purposes. The “Keelstone Financial” name and branding are
           invented for this demo. Any resemblance to real companies, marks, or
           products is coincidental.
         </p>
@@ -151,7 +151,7 @@ const sections: LegalSection[] = [
     body: (
       <>
         <p>
-          To the fullest extent permitted by law, Meridian and its contributors
+          To the fullest extent permitted by law, Keelstone and its contributors
           will not be liable for any indirect, incidental, special,
           consequential, or punitive damages, or any loss of data, arising from
           your use of this demonstration Service. The Service has no fees and
@@ -166,7 +166,7 @@ const sections: LegalSection[] = [
     body: (
       <>
         <p>
-          You agree to hold Meridian and its contributors harmless from claims
+          You agree to hold Keelstone and its contributors harmless from claims
           arising out of your misuse of the Service or your violation of these
           Terms, including any decision to enter real data against this guidance.
         </p>

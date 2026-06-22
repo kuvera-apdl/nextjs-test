@@ -298,7 +298,7 @@ export default function TreasuryPage() {
   const [startingCash, setStartingCash] = useState(6000000);
 
   useEffect(() => {
-    document.title = "Treasury — Meridian Financial";
+    document.title = "Treasury — Keelstone Financial";
   }, []);
 
   return (
@@ -317,7 +317,7 @@ export default function TreasuryPage() {
                 Every dollar visible. Every idle dollar working.
               </h1>
               <p className="mt-5 max-w-xl text-lg leading-relaxed text-slate-600">
-                Meridian Treasury pulls every account, entity, and currency into
+                Keelstone Treasury pulls every account, entity, and currency into
                 one live cash position — then forecasts it forward and sweeps
                 idle balances into yield, automatically.
               </p>
@@ -343,7 +343,7 @@ export default function TreasuryPage() {
           <SectionHeading
             eyebrow="Cash-flow simulator"
             title="Project your next 12 months in seconds"
-            description="Set your starting cash, monthly net flow, and growth rate. Meridian builds the same projection from your live balances — this one’s just for playing."
+            description="Set your starting cash, monthly net flow, and growth rate. Keelstone builds the same projection from your live balances — this one’s just for playing."
           />
           <div className="mt-10">
             <CashFlowSimulator
@@ -380,7 +380,7 @@ export default function TreasuryPage() {
             <Feature
               icon={<IconChart className="h-5 w-5" />}
               title="Real-time positions"
-              desc="Balances refresh continuously across every connected bank and Meridian account — one number for total cash, no spreadsheet stitching."
+              desc="Balances refresh continuously across every connected bank and Keelstone account — one number for total cash, no spreadsheet stitching."
             />
             <Feature
               icon={<IconCalendar className="h-5 w-5" />}
@@ -416,7 +416,7 @@ export default function TreasuryPage() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <figure className="text-center">
             <blockquote className="text-2xl font-medium leading-relaxed tracking-tight text-slate-900 sm:text-3xl">
-              “We closed our Friday cash position at 9am instead of 4pm. Meridian
+              “We closed our Friday cash position at 9am instead of 4pm. Keelstone
               paid for itself the first month — the sweep rules alone earn more
               than the platform costs us.”
             </blockquote>

@@ -88,7 +88,7 @@ export default function BlogIndexPage() {
   const [failedKey, setFailedKey] = useState<string | null>(null);
 
   useEffect(() => {
-    document.title = "Blog — Meridian Financial";
+    document.title = "Blog — Keelstone Financial";
   }, []);
 
   useEffect(() => {
@@ -131,7 +131,7 @@ export default function BlogIndexPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Resources"
-            title="The Meridian Journal"
+            title="The Keelstone Journal"
             description="Field notes on global payments, treasury strategy, and the engineering behind money movement — written by the team building it."
           />
 

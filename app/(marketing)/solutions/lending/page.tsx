@@ -355,7 +355,7 @@ function EligibilityChecker() {
 
 export default function LendingPage() {
   useEffect(() => {
-    document.title = "Lending — Meridian Financial";
+    document.title = "Lending — Keelstone Financial";
   }, []);
 
   return (
@@ -489,7 +489,7 @@ export default function LendingPage() {
                 icon: <IconClock className="h-5 w-5" />,
                 step: "03",
                 title: "Funded in 1–2 days",
-                desc: "Accept online and funds land in your Meridian or external account. Lines and invoice advances draw same-day after setup.",
+                desc: "Accept online and funds land in your Keelstone or external account. Lines and invoice advances draw same-day after setup.",
               },
             ].map((s) => (
               <Card key={s.step} hover className="h-full">

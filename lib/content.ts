@@ -13,12 +13,12 @@ export const faqCategories = [
 export const faqs: Faq[] = [
   {
     category: "General",
-    q: "What is Meridian Financial?",
-    a: "Meridian is a financial operations platform for businesses. It combines multi-currency accounts, global payments, treasury management, lending, and corporate cards behind one dashboard and one API. (This site is a fictional demo — none of the products are real.)",
+    q: "What is Keelstone Financial?",
+    a: "Keelstone is a financial operations platform for businesses. It combines multi-currency accounts, global payments, treasury management, lending, and corporate cards behind one dashboard and one API. (This site is a fictional demo — none of the products are real.)",
   },
   {
     category: "General",
-    q: "Who is Meridian for?",
+    q: "Who is Keelstone for?",
     a: "Finance teams at companies that move money at scale — typically 20 to 5,000 employees. Customers include logistics operators, healthcare groups, SaaS businesses, and manufacturers managing payments across multiple currencies and entities.",
   },
   {

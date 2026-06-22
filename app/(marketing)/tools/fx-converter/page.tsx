@@ -26,7 +26,7 @@ const MAJORS = ["EUR", "GBP", "JPY", "CHF", "CAD", "AUD", "SGD", "HKD"];
 
 export default function FxConverterPage() {
   useEffect(() => {
-    document.title = "FX Converter — Meridian Financial";
+    document.title = "FX Converter — Keelstone Financial";
   }, []);
 
   // ---- Rates table (fetched on mount) ----
@@ -304,7 +304,7 @@ export default function FxConverterPage() {
                 Move real money at mid-market
               </h3>
               <p className="mt-1 text-sm text-slate-600">
-                Meridian Payments converts at the same mid-market rate you see
+                Keelstone Payments converts at the same mid-market rate you see
                 here — no hidden spread, ever.
               </p>
             </div>

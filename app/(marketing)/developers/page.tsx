@@ -23,29 +23,29 @@ const authSnippets: Snippet[] = [
   {
     lang: "curl",
     label: "cURL",
-    code: `curl https://api.meridian.example/v1/me \\
+    code: `curl https://api.keelstone.example/v1/me \\
   -H "Authorization: Bearer mk_sandbox_4q9zr31kp7v2m8c5x0jw6t1d" \\
-  -H "Meridian-Version: 2026-05-01"`,
+  -H "Keelstone-Version: 2026-05-01"`,
   },
   {
     lang: "node",
     label: "Node",
-    code: `import { Meridian } from "@meridian/sdk";
+    code: `import { Keelstone } from "@keelstone/sdk";
 
-const meridian = new Meridian({
-  apiKey: process.env.MERIDIAN_API_KEY, // mk_sandbox_... or mk_live_...
+const keelstone = new Keelstone({
+  apiKey: process.env.KEELSTONE_API_KEY, // mk_sandbox_... or mk_live_...
 });
 
-const me = await meridian.identity.retrieve();
+const me = await keelstone.identity.retrieve();
 console.log(me.org.name, me.mode); // "Acme Logistics" "sandbox"`,
   },
   {
     lang: "python",
     label: "Python",
     code: `import os
-from meridian import Meridian
+from keelstone import Keelstone
 
-client = Meridian(api_key=os.environ["MERIDIAN_API_KEY"])
+client = Keelstone(api_key=os.environ["KEELSTONE_API_KEY"])
 
 me = client.identity.retrieve()
 print(me.org.name, me.mode)  # Acme Logistics sandbox`,
@@ -56,8 +56,8 @@ const paymentsSnippets: Snippet[] = [
   {
     lang: "curl",
     label: "cURL",
-    code: `curl -X POST https://api.meridian.example/v1/payments \\
-  -H "Authorization: Bearer $MERIDIAN_API_KEY" \\
+    code: `curl -X POST https://api.keelstone.example/v1/payments \\
+  -H "Authorization: Bearer $KEELSTONE_API_KEY" \\
   -H "Content-Type: application/json" \\
   -H "Idempotency-Key: ord-84312-payout" \\
   -d '{
@@ -71,7 +71,7 @@ const paymentsSnippets: Snippet[] = [
   {
     lang: "node",
     label: "Node",
-    code: `const payment = await meridian.payments.create(
+    code: `const payment = await keelstone.payments.create(
   {
     amount: 125000, // minor units (EUR 1,250.00)
     currency: "EUR",
@@ -104,13 +104,13 @@ const treasurySnippets: Snippet[] = [
   {
     lang: "curl",
     label: "cURL",
-    code: `curl "https://api.meridian.example/v1/balances?currencies=USD,EUR,GBP" \\
-  -H "Authorization: Bearer $MERIDIAN_API_KEY"`,
+    code: `curl "https://api.keelstone.example/v1/balances?currencies=USD,EUR,GBP" \\
+  -H "Authorization: Bearer $KEELSTONE_API_KEY"`,
   },
   {
     lang: "node",
     label: "Node",
-    code: `const balances = await meridian.treasury.balances.list({
+    code: `const balances = await keelstone.treasury.balances.list({
   currencies: ["USD", "EUR", "GBP"],
 });
 
@@ -138,11 +138,11 @@ const webhookSnippets: Snippet[] = [
     lang: "curl",
     label: "cURL",
     code: `# Register an HTTPS endpoint for the events you care about
-curl -X POST https://api.meridian.example/v1/webhook_endpoints \\
-  -H "Authorization: Bearer $MERIDIAN_API_KEY" \\
+curl -X POST https://api.keelstone.example/v1/webhook_endpoints \\
+  -H "Authorization: Bearer $KEELSTONE_API_KEY" \\
   -H "Content-Type: application/json" \\
   -d '{
-    "url": "https://example.com/hooks/meridian",
+    "url": "https://example.com/hooks/keelstone",
     "events": ["payment.completed", "payment.failed"]
   }'`,
   },
@@ -154,7 +154,7 @@ curl -X POST https://api.meridian.example/v1/webhook_endpoints \\
 export function verifyWebhook(rawBody, signatureHeader) {
   // rawBody must be the exact request bytes, before JSON parsing
   const expected = crypto
-    .createHmac("sha256", process.env.MERIDIAN_WEBHOOK_SECRET)
+    .createHmac("sha256", process.env.KEELSTONE_WEBHOOK_SECRET)
     .update(rawBody)
     .digest("hex");
 
@@ -174,7 +174,7 @@ import os
 def verify_webhook(raw_body: bytes, signature_header: str) -> bool:
     # raw_body must be the exact request bytes, before JSON parsing
     expected = hmac.new(
-        os.environ["MERIDIAN_WEBHOOK_SECRET"].encode(),
+        os.environ["KEELSTONE_WEBHOOK_SECRET"].encode(),
         raw_body,
         hashlib.sha256,
     ).hexdigest()
@@ -186,8 +186,8 @@ const errorSnippets: Snippet[] = [
   {
     lang: "curl",
     label: "cURL",
-    code: `curl -i https://api.meridian.example/v1/payments/pay_unknown \\
-  -H "Authorization: Bearer $MERIDIAN_API_KEY"
+    code: `curl -i https://api.keelstone.example/v1/payments/pay_unknown \\
+  -H "Authorization: Bearer $KEELSTONE_API_KEY"
 
 # HTTP/2 404
 # {
@@ -202,10 +202,10 @@ const errorSnippets: Snippet[] = [
   {
     lang: "node",
     label: "Node",
-    code: `import { Meridian, APIError } from "@meridian/sdk";
+    code: `import { Keelstone, APIError } from "@keelstone/sdk";
 
 try {
-  await meridian.payments.retrieve("pay_unknown");
+  await keelstone.payments.retrieve("pay_unknown");
 } catch (err) {
   if (err instanceof APIError) {
     console.error(err.status, err.code, err.requestId);
@@ -217,7 +217,7 @@ try {
   {
     lang: "python",
     label: "Python",
-    code: `from meridian import APIError
+    code: `from keelstone import APIError
 
 try:
     client.payments.retrieve("pay_unknown")
@@ -325,7 +325,7 @@ export default function DevelopersPage() {
   });
 
   useEffect(() => {
-    document.title = "Developers — Meridian Financial";
+    document.title = "Developers — Keelstone Financial";
   }, []);
 
   useEffect(() => {
@@ -419,7 +419,7 @@ export default function DevelopersPage() {
               Developer portal
             </p>
             <h1 className="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">
-              Build on Meridian
+              Build on Keelstone
             </h1>
             <p className="mt-5 text-lg leading-relaxed text-slate-300">
               One REST API for accounts, payments, FX, and cards. Requests are
@@ -444,7 +444,7 @@ export default function DevelopersPage() {
             </div>
             <p className="mt-8 font-mono text-sm text-slate-400">
               <span className="select-none text-emerald-400">$ </span>
-              curl https://api.meridian.example/v1/ping
+              curl https://api.keelstone.example/v1/ping
             </p>
           </div>
         </div>
@@ -502,7 +502,7 @@ export default function DevelopersPage() {
                   environment: <InlineCode>mk_sandbox_</InlineCode> keys can never move
                   real money, and <InlineCode>mk_live_</InlineCode> keys require an
                   approved workspace. Pin a release with the{" "}
-                  <InlineCode>Meridian-Version</InlineCode> header — breaking changes
+                  <InlineCode>Keelstone-Version</InlineCode> header — breaking changes
                   only ship in new dated versions.
                 </p>
                 <CodeBlock
@@ -700,9 +700,9 @@ export default function DevelopersPage() {
                   </h2>
                 </div>
                 <p className="mt-4 leading-relaxed text-slate-600">
-                  Subscribe an HTTPS endpoint to any event family and Meridian pushes
+                  Subscribe an HTTPS endpoint to any event family and Keelstone pushes
                   state changes to you. Every delivery carries a{" "}
-                  <InlineCode>Meridian-Signature</InlineCode> header — an HMAC-SHA256
+                  <InlineCode>Keelstone-Signature</InlineCode> header — an HMAC-SHA256
                   of the raw body with your per-endpoint secret. Verify it before
                   trusting the payload, and always compare with a timing-safe
                   function. Failed deliveries retry with exponential backoff for 72

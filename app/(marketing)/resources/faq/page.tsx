@@ -19,7 +19,7 @@ export default function FaqPage() {
   const [category, setCategory] = useState<string>(ALL);
 
   useEffect(() => {
-    document.title = "Help & FAQ — Meridian Financial";
+    document.title = "Help & FAQ — Keelstone Financial";
   }, []);
 
   const filtered = useMemo(() => {

@@ -75,7 +75,7 @@ function CardCustomizer() {
           <div className="relative flex h-full flex-col">
             <div className="flex items-start justify-between">
               <span className="text-sm font-semibold uppercase tracking-[0.25em]">
-                Meridian
+                Keelstone
               </span>
               <span className="rounded-full bg-white/15 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider backdrop-blur">
                 {virtual ? "Virtual" : "Physical"}
@@ -222,7 +222,7 @@ function SpendControls() {
           {over && (
             <p className="rounded-xl border border-rose-200 bg-rose-50 p-4 text-sm leading-relaxed text-rose-700">
               This allocation exceeds the company policy cap. In production,
-              Meridian would route it to your admin for approval before any
+              Keelstone would route it to your admin for approval before any
               limit changes take effect.
             </p>
           )}
@@ -308,15 +308,15 @@ function Feature({
 
 /* ----------------------------- Comparison ----------------------------- */
 
-const COMPARISON: { feature: string; meridian: boolean; legacy: boolean }[] = [
-  { feature: "Instant virtual card issuance", meridian: true, legacy: false },
-  { feature: "Real-time spend controls per card", meridian: true, legacy: false },
-  { feature: "1.5% cashback on all spend", meridian: true, legacy: false },
-  { feature: "No annual or per-card fees", meridian: true, legacy: false },
-  { feature: "Receipts matched automatically", meridian: true, legacy: false },
-  { feature: "Syncs to your ERP nightly", meridian: true, legacy: false },
-  { feature: "Accepted worldwide", meridian: true, legacy: true },
-  { feature: "No personal guarantee", meridian: true, legacy: false },
+const COMPARISON: { feature: string; keelstone: boolean; legacy: boolean }[] = [
+  { feature: "Instant virtual card issuance", keelstone: true, legacy: false },
+  { feature: "Real-time spend controls per card", keelstone: true, legacy: false },
+  { feature: "1.5% cashback on all spend", keelstone: true, legacy: false },
+  { feature: "No annual or per-card fees", keelstone: true, legacy: false },
+  { feature: "Receipts matched automatically", keelstone: true, legacy: false },
+  { feature: "Syncs to your ERP nightly", keelstone: true, legacy: false },
+  { feature: "Accepted worldwide", keelstone: true, legacy: true },
+  { feature: "No personal guarantee", keelstone: true, legacy: false },
 ];
 
 function ComparisonTable() {
@@ -327,7 +327,7 @@ function ComparisonTable() {
           <tr className="border-b border-slate-200 bg-slate-50 text-left">
             <th className="px-5 py-3.5 font-medium text-slate-500">Capability</th>
             <th className="w-28 px-4 py-3.5 text-center font-semibold text-slate-900">
-              Meridian
+              Keelstone
             </th>
             <th className="w-28 px-4 py-3.5 text-center font-medium text-slate-500">
               Legacy card
@@ -342,7 +342,7 @@ function ComparisonTable() {
             >
               <td className="px-5 py-3 text-slate-700">{row.feature}</td>
               <td className="px-4 py-3">
-                {row.meridian ? (
+                {row.keelstone ? (
                   <IconCheck className="mx-auto h-5 w-5 text-emerald-600" />
                 ) : (
                   <IconX className="mx-auto h-5 w-5 text-slate-300" />
@@ -367,7 +367,7 @@ function ComparisonTable() {
 
 export default function CorporateCardsPage() {
   useEffect(() => {
-    document.title = "Corporate Cards — Meridian Financial";
+    document.title = "Corporate Cards — Keelstone Financial";
   }, []);
 
   return (
@@ -400,7 +400,7 @@ export default function CorporateCardsPage() {
               </div>
               <p className="mt-6 text-sm text-slate-500">
                 No annual fees · No per-card fees · Cobalt Labs runs 340 active
-                cards on Meridian
+                cards on Keelstone
               </p>
             </div>
             <div className="animate-fade-up">
@@ -450,7 +450,7 @@ export default function CorporateCardsPage() {
             <Feature
               icon={<IconFile className="h-5 w-5" />}
               title="Receipts matching"
-              desc="Cardholders text or forward a receipt; Meridian matches it to the transaction and files it for your accountants automatically."
+              desc="Cardholders text or forward a receipt; Keelstone matches it to the transaction and files it for your accountants automatically."
             />
             <Feature
               icon={<IconBolt className="h-5 w-5" />}
@@ -476,7 +476,7 @@ export default function CorporateCardsPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Why switch"
-            title="Meridian vs the card your bank gave you"
+            title="Keelstone vs the card your bank gave you"
             align="center"
           />
           <div className="mt-12">

@@ -31,7 +31,7 @@ export function DemoNotice() {
       <IconAlert className="mt-0.5 h-5 w-5 shrink-0 text-amber-600" />
       <p className="text-sm leading-relaxed text-amber-900">
         <span className="font-semibold">Demonstration notice. </span>
-        Meridian Financial is a fictional company, and this website is a demo and
+        Keelstone Financial is a fictional company, and this website is a demo and
         integration-testing application. The text below is illustrative sample
         content — it is not legal advice and does not govern any real product or
         service. Please do not enter real personal, financial, or confidential
@@ -57,7 +57,7 @@ export function LegalPage({
   const [active, setActive] = useState(sections[0]?.id ?? "");
 
   useEffect(() => {
-    document.title = `${title} — Meridian Financial`;
+    document.title = `${title} — Keelstone Financial`;
   }, [title]);
 
   useEffect(() => {

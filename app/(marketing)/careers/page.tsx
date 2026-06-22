@@ -82,7 +82,7 @@ const PERKS = [
 
 export default function CareersPage() {
   useEffect(() => {
-    document.title = "Careers — Meridian Financial";
+    document.title = "Careers — Keelstone Financial";
   }, []);
 
   // ---- Job board state ----
@@ -354,7 +354,7 @@ export default function CareersPage() {
         <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
           <figure className="mx-auto max-w-3xl text-center">
             <blockquote className="text-2xl font-medium leading-relaxed tracking-tight sm:text-3xl">
-              “I’ve shipped payment systems at three companies. Meridian is the
+              “I’ve shipped payment systems at three companies. Keelstone is the
               first place where the hard problems — settlement, reconciliation,
               moving money across borders — are the product, not a side quest.”
             </blockquote>

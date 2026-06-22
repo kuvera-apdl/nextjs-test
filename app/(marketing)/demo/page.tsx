@@ -65,7 +65,7 @@ const PRODUCTS = [
 
 export default function DemoPage() {
   useEffect(() => {
-    document.title = "Get a demo — Meridian Financial";
+    document.title = "Get a demo — Keelstone Financial";
   }, []);
 
   const [step, setStep] = useState(0);
@@ -180,7 +180,7 @@ export default function DemoPage() {
               Get a demo
             </p>
             <h1 className="mt-2 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
-              See Meridian on your numbers
+              See Keelstone on your numbers
             </h1>
             <p className="mt-3 text-lg text-slate-600">
               Three quick questions, then we’ll tailor a walkthrough to your

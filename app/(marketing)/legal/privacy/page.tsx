@@ -10,9 +10,9 @@ const sections: LegalSection[] = [
     body: (
       <>
         <p>
-          This Privacy Policy explains how Meridian Financial (“Meridian”, “we”,
+          This Privacy Policy explains how Keelstone Financial (“Keelstone”, “we”,
           “us”) would handle personal information across this website and the
-          associated demo dashboard. Because Meridian is a fictional company and
+          associated demo dashboard. Because Keelstone is a fictional company and
           this is a demonstration application, the policy is sample text written
           to mirror how a real financial-operations platform documents its
           practices.
@@ -88,7 +88,7 @@ const sections: LegalSection[] = [
           Where the EU General Data Protection Regulation applies, a real
           operator would rely on legal bases such as performance of a contract,
           legitimate interests, consent, and compliance with legal obligations.
-          As a fictional demo, Meridian asserts no such bases and undertakes no
+          As a fictional demo, Keelstone asserts no such bases and undertakes no
           processing beyond the in-memory handling described here.
         </p>
       </>
@@ -193,7 +193,7 @@ const sections: LegalSection[] = [
     body: (
       <>
         <p>
-          Meridian is a business-to-business demo and is not directed to
+          Keelstone is a business-to-business demo and is not directed to
           children. We do not knowingly collect information from anyone under 16.
         </p>
       </>
@@ -220,7 +220,7 @@ const sections: LegalSection[] = [
         <p>
           Questions about this policy can be sent through our{" "}
           <Link href="/contact">contact form</Link>. In a real deployment, a
-          privacy team at <span className="font-mono">privacy@meridian.example</span>{" "}
+          privacy team at <span className="font-mono">privacy@keelstone.example</span>{" "}
           would respond; here, your message is simply recorded in memory.
         </p>
       </>
@@ -233,9 +233,9 @@ export default function PrivacyPolicyPage() {
     <LegalPage
       slug="privacy"
       title="Privacy Policy"
-      intro="How the Meridian Financial demo handles the information you enter — and why there is very little of it to handle."
+      intro="How the Keelstone Financial demo handles the information you enter — and why there is very little of it to handle."
       keyPoints={[
-        "Meridian is fictional; please use placeholder data only.",
+        "Keelstone is fictional; please use placeholder data only.",
         "Submitted data stays in server memory and is erased when the demo restarts.",
         "No analytics, advertising, tracking, or data sales of any kind.",
         "One strictly-necessary cookie keeps you signed in to the dashboard.",

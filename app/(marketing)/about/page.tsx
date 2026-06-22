@@ -85,8 +85,8 @@ const milestones: {
     year: "2019",
     type: "Company",
     tone: "emerald",
-    title: "Meridian is founded in Amsterdam",
-    body: "Maya Lindqvist and Tomás Ferreira start Meridian with a simple thesis: moving money should be as programmable as deploying code. The first build is a multi-currency ledger and a payments API, run for three design partners out of a borrowed office above a bicycle shop.",
+    title: "Keelstone is founded in Amsterdam",
+    body: "Maya Lindqvist and Tomás Ferreira start Keelstone with a simple thesis: moving money should be as programmable as deploying code. The first build is a multi-currency ledger and a payments API, run for three design partners out of a borrowed office above a bicycle shop.",
   },
   {
     year: "2020",
@@ -100,14 +100,14 @@ const milestones: {
     type: "Product",
     tone: "blue",
     title: "Treasury joins the ledger",
-    body: "Multi-currency accounts and a live group cash view ship as Meridian Treasury. Nordwind Logistics signs as the first enterprise customer and retires eleven banking portals in a single quarter.",
+    body: "Multi-currency accounts and a live group cash view ship as Keelstone Treasury. Nordwind Logistics signs as the first enterprise customer and retires eleven banking portals in a single quarter.",
   },
   {
     year: "2022",
     type: "Scale",
     tone: "violet",
     title: "One thousand finance teams",
-    body: "Meridian crosses 1,000 customers and opens offices in London and Singapore. Payment operations move to a follow-the-sun model so a transfer stuck at 3 a.m. gets a human answer at 3:04.",
+    body: "Keelstone crosses 1,000 customers and opens offices in London and Singapore. Payment operations move to a follow-the-sun model so a transfer stuck at 3 a.m. gets a human answer at 3:04.",
   },
   {
     year: "2023",
@@ -121,7 +121,7 @@ const milestones: {
     type: "Milestone",
     tone: "amber",
     title: "Lending, underwritten on real flows",
-    body: "Credit lines launch, underwritten on the payment volume Meridian already sees instead of stale financials. The same year, the platform processes its first billion-dollar quarter.",
+    body: "Credit lines launch, underwritten on the payment volume Keelstone already sees instead of stale financials. The same year, the platform processes its first billion-dollar quarter.",
   },
   {
     year: "2025",
@@ -135,7 +135,7 @@ const milestones: {
     type: "Today",
     tone: "amber",
     title: "3,400 teams and counting",
-    body: "Meridian now moves $4.2B a year for 3,400 finance teams, from seed-stage startups to multinational groups. The thesis has not changed — and most of the roadmap is still ahead of us.",
+    body: "Keelstone now moves $4.2B a year for 3,400 finance teams, from seed-stage startups to multinational groups. The thesis has not changed — and most of the roadmap is still ahead of us.",
   },
 ];
 
@@ -166,7 +166,7 @@ const values = [
   {
     title: "Skin in the game",
     icon: IconWallet,
-    base: "Meridian runs its own treasury, payroll, and spend on Meridian. Every rough edge lands on our own finance team first.",
+    base: "Keelstone runs its own treasury, payroll, and spend on Keelstone. Every rough edge lands on our own finance team first.",
     extra:
       "Our CFO files the same support tickets customers do, through the same queue. Nothing sharpens a roadmap like closing your own books on your own product.",
   },
@@ -180,7 +180,7 @@ const leaders = [
     role: "Co-founder & CEO",
     initials: "ML",
     gradient: "from-emerald-500 to-sky-500",
-    bio: "Maya spent a decade running group treasury for industrial and logistics companies, ending as Group Treasurer at Nordwind Logistics — where reconciling fourteen banking portals every Friday convinced her the tooling, not the team, was the problem. She co-founded Meridian in 2019 and still reads every incident postmortem that touches customer funds.",
+    bio: "Maya spent a decade running group treasury for industrial and logistics companies, ending as Group Treasurer at Nordwind Logistics — where reconciling fourteen banking portals every Friday convinced her the tooling, not the team, was the problem. She co-founded Keelstone in 2019 and still reads every incident postmortem that touches customer funds.",
     history: [
       "Group Treasurer, Nordwind Logistics · 2014–2019",
       "Treasury operations lead, European industrial group · 2009–2014",
@@ -191,7 +191,7 @@ const leaders = [
     role: "Co-founder & CTO",
     initials: "TF",
     gradient: "from-violet-500 to-emerald-500",
-    bio: "Tomás builds the boring kind of infrastructure that never makes the news. Before Meridian he was principal engineer at Cobalt Labs, where he led the rebuild of their double-entry ledger under live traffic. He believes any payment system worth trusting should be explainable on a single whiteboard.",
+    bio: "Tomás builds the boring kind of infrastructure that never makes the news. Before Keelstone he was principal engineer at Cobalt Labs, where he led the rebuild of their double-entry ledger under live traffic. He believes any payment system worth trusting should be explainable on a single whiteboard.",
     history: [
       "Principal Engineer, Cobalt Labs · 2015–2019",
       "Platform engineer, Amsterdam payments startup · 2011–2015",
@@ -202,7 +202,7 @@ const leaders = [
     role: "Head of Treasury Solutions",
     initials: "PR",
     gradient: "from-amber-400 to-rose-500",
-    bio: "Priya ran FX and hedging across eleven currencies for Basalt Mining before joining Meridian in 2021. She turned that experience into Meridian Treasury — the product she says she spent five years wishing someone would build. She still spends one week each quarter embedded with a customer treasury team.",
+    bio: "Priya ran FX and hedging across eleven currencies for Basalt Mining before joining Keelstone in 2021. She turned that experience into Keelstone Treasury — the product she says she spent five years wishing someone would build. She still spends one week each quarter embedded with a customer treasury team.",
     history: [
       "Head of FX & Hedging, Basalt Mining · 2016–2021",
       "Treasury analyst, commodities trading desk · 2012–2016",
@@ -213,7 +213,7 @@ const leaders = [
     role: "Compliance Lead",
     initials: "JW",
     gradient: "from-sky-500 to-violet-500",
-    bio: "Jonah has spent his career on both sides of the audit table — first as a bank examiner, then building financial-crime programs for a cross-border payments provider. He joined Meridian in 2020 to make compliance a product feature instead of a gate, and his team ships controls the way engineers ship code.",
+    bio: "Jonah has spent his career on both sides of the audit table — first as a bank examiner, then building financial-crime programs for a cross-border payments provider. He joined Keelstone in 2020 to make compliance a product feature instead of a gate, and his team ships controls the way engineers ship code.",
     history: [
       "Director of Financial-Crime Compliance, cross-border payments provider · 2015–2020",
       "Bank examiner, prudential supervision · 2010–2015",
@@ -224,7 +224,7 @@ const leaders = [
     role: "Head of Product",
     initials: "SM",
     gradient: "from-rose-400 to-amber-400",
-    bio: "Sofia led spend-management product at Quill & Co, where she watched finance teams duct-tape five tools together to answer one question. At Meridian since 2022, she is quietly obsessed with removing one click per week from month-end close — and keeps a public tally of the clicks removed.",
+    bio: "Sofia led spend-management product at Quill & Co, where she watched finance teams duct-tape five tools together to answer one question. At Keelstone since 2022, she is quietly obsessed with removing one click per week from month-end close — and keeps a public tally of the clicks removed.",
     history: [
       "Director of Product, Quill & Co · 2017–2022",
       "Product manager, B2B software · 2013–2017",
@@ -235,7 +235,7 @@ const leaders = [
     role: "CFO",
     initials: "AC",
     gradient: "from-emerald-400 to-teal-600",
-    bio: "Andre was CFO at Atlas Freight — and one of Meridian’s earliest enterprise customers. After three years of closing Atlas’s books on the platform, he switched sides in 2023. He now runs Meridian’s own finances on Meridian, and files his complaints through the same support queue as everyone else.",
+    bio: "Andre was CFO at Atlas Freight — and one of Keelstone’s earliest enterprise customers. After three years of closing Atlas’s books on the platform, he switched sides in 2023. He now runs Keelstone’s own finances on Keelstone, and files his complaints through the same support queue as everyone else.",
     history: [
       "CFO, Atlas Freight · 2016–2023",
       "FP&A lead, global logistics group · 2010–2016",
@@ -251,7 +251,7 @@ export default function AboutPage() {
   const [selectedLeader, setSelectedLeader] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = "About — Meridian Financial";
+    document.title = "About — Keelstone Financial";
   }, []);
 
   const milestone = milestones.find((m) => m.year === activeYear) ?? milestones[0];
@@ -266,14 +266,14 @@ export default function AboutPage() {
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8">
           <div className="max-w-3xl animate-fade-up">
             <p className="text-sm font-semibold uppercase tracking-wider text-emerald-600">
-              About Meridian
+              About Keelstone
             </p>
             <h1 className="mt-4 text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
               Moving money should be as programmable as{" "}
               <span className="text-emerald-600">deploying code.</span>
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-slate-600">
-              Meridian exists because our founders were tired of running global finance through
+              Keelstone exists because our founders were tired of running global finance through
               portals built two decades ago — fourteen logins, five spreadsheets, and a fax number
               for emergencies. We build the platform we wished existed: one ledger for payments,
               treasury, credit, and cards, with an API underneath everything and an audit trail
@@ -477,7 +477,7 @@ export default function AboutPage() {
               </span>
               <div>
                 <Badge tone="emerald">{leader.role}</Badge>
-                <p className="mt-1.5 text-sm text-slate-500">Meridian Financial</p>
+                <p className="mt-1.5 text-sm text-slate-500">Keelstone Financial</p>
               </div>
             </div>
             <p className="mt-5 text-sm leading-relaxed text-slate-600">{leader.bio}</p>

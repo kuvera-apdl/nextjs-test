@@ -90,7 +90,7 @@ export default function OverviewPage() {
   const [sortDir, setSortDir] = useState<"asc" | "desc">("desc");
 
   useEffect(() => {
-    document.title = "Overview — Meridian Financial";
+    document.title = "Overview — Keelstone Financial";
   }, []);
 
   const load = useCallback(async () => {

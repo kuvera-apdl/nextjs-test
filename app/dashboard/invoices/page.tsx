@@ -101,7 +101,7 @@ export default function InvoicesPage() {
   const [creating, setCreating] = useState(false);
 
   useEffect(() => {
-    document.title = "Invoices — Meridian Financial";
+    document.title = "Invoices — Keelstone Financial";
   }, []);
 
   useEffect(() => {
@@ -207,7 +207,7 @@ export default function InvoicesPage() {
 
   async function copyLink(id: string) {
     try {
-      await navigator.clipboard.writeText(`https://pay.meridian.example/${id}`);
+      await navigator.clipboard.writeText(`https://pay.keelstone.example/${id}`);
       setCopiedId(id);
       window.setTimeout(
         () => setCopiedId((cur) => (cur === id ? null : cur)),

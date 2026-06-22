@@ -2,7 +2,7 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "meridian",
+      "name": "keelstone",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["start", "--prefix", "/Users/kirillsukhikh/meridian-financial"],
       "port": 4173

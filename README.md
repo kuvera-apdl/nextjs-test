@@ -1,4 +1,4 @@
-# Meridian Financial
+# Keelstone Financial
 
 A **fictional** B2B financial-services platform — global payments, treasury management, business lending, and corporate cards — built as a fullstack Next.js demo application. Nothing here is a real financial product; all companies, people, numbers, and claims are invented.
 
@@ -24,7 +24,7 @@ Open [http://localhost:3000](http://localhost:3000).
 
 | Field    | Value                   |
 | -------- | ----------------------- |
-| Email    | `demo@meridian.example` |
+| Email    | `demo@keelstone.example` |
 | Password | `northstar`             |
 
 Sign in at `/login` to access the client dashboard (`/dashboard`).

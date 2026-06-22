@@ -79,7 +79,7 @@ export function Logo({ dark }: { dark?: boolean }) {
           dark ? "text-white" : "text-slate-900"
         )}
       >
-        Meridian<span className="text-emerald-500">.</span>
+        Keelstone<span className="text-emerald-500">.</span>
       </span>
     </Link>
   );

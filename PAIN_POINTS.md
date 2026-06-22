@@ -1,7 +1,7 @@
 # Seeded UX pain points (ground truth)
 
 This file is the ground-truth record of intentionally-seeded usability bugs in the
-Meridian Financial demo app. They were planted to give experience-monitoring and
+Keelstone Financial demo app. They were planted to give experience-monitoring and
 session-analysis tooling a realistic corpus of pain points to detect and rank.
 
 Each issue is written to look like an ordinary developer mistake (a dropped
@@ -39,7 +39,7 @@ under evaluation must not see the answer key.
 - **Cause:** The query is lower-cased but the haystack is no longer lower-cased, so
   the `.includes()` comparison never matches mixed-case descriptions.
 - **Signal:** Repeated typing / retyping in the search box, empty-state views,
-  search abandonment. Login required (`demo@meridian.example` / `northstar`).
+  search abandonment. Login required (`demo@keelstone.example` / `northstar`).
 
 ## PP-02 — Payments settle much slower than the UI promises
 
@@ -68,7 +68,7 @@ under evaluation must not see the answer key.
 - **File:** `app/(marketing)/solutions/payments/page.tsx` (`pct`)
 - **Symptom:** The savings card reads "about **340%** lower than your legacy bank" at
   the default sliders, and stays above 100% across most settings.
-- **Cause:** The percentage divides savings by the *Meridian* cost instead of the
+- **Cause:** The percentage divides savings by the *Keelstone* cost instead of the
   *legacy* cost, so it can exceed 100%.
 - **Signal:** A visibly nonsensical headline number on a trust-building calculator —
   a data-correctness pain a reader will distrust.

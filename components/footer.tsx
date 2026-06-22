@@ -150,7 +150,7 @@ export default function Footer() {
           </nav>
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-xs text-slate-500">
-              © 2026 Meridian Financial, Inc. All rights reserved.
+              © 2026 Keelstone Financial, Inc. All rights reserved.
             </p>
             <div className="flex gap-5 text-xs text-slate-500">
               <span>SOC 2 Type II</span>
@@ -159,7 +159,7 @@ export default function Footer() {
             </div>
           </div>
           <p className="mt-4 text-xs leading-relaxed text-slate-600">
-            Meridian Financial is a fictional company. This website is a demo
+            Keelstone Financial is a fictional company. This website is a demo
             application — nothing on it is a real financial product, offer, or
             claim. All customers, people, and figures are invented.
           </p>

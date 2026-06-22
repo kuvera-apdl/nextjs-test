@@ -93,7 +93,7 @@ function avgUptime(values: number[]): string {
 
 export default function StatusPage() {
   useEffect(() => {
-    document.title = "System Status — Meridian Financial";
+    document.title = "System Status — Keelstone Financial";
   }, []);
 
   const [data, setData] = useState<StatusPayload | null>(null);
@@ -191,7 +191,7 @@ export default function StatusPage() {
           <SectionHeading
             eyebrow="Status"
             title="System status"
-            description="Live health for every Meridian service, refreshed automatically every five seconds."
+            description="Live health for every Keelstone service, refreshed automatically every five seconds."
           />
 
           {/* --------------------------- Overall banner -------------------------- */}

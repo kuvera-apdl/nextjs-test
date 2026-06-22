@@ -12,7 +12,7 @@ const sections: LegalSection[] = [
         <p>
           Cookies are small text files a website stores in your browser. They are
           widely used to keep you signed in, remember preferences, and measure
-          usage. This Cookie Policy explains the cookies used by the Meridian
+          usage. This Cookie Policy explains the cookies used by the Keelstone
           Financial demo and how to control them.
         </p>
       </>

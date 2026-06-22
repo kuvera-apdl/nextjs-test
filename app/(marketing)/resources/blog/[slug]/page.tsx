@@ -119,8 +119,8 @@ export default function ArticlePage() {
   /* Document title */
   useEffect(() => {
     document.title = post
-      ? `${post.title} — Meridian Financial`
-      : "Blog — Meridian Financial";
+      ? `${post.title} — Keelstone Financial`
+      : "Blog — Keelstone Financial";
   }, [post]);
 
   /* Reading progress bar */
